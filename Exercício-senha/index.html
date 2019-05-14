@@ -20,46 +20,6 @@
         <div id="forca"></div>
     </div>
     
-    <script type="text/javascript" src="../01/js/jquery-3.4.1.js"></script>
-    <script>
-        
-        $(document).ready(function() {
-            $('#senha').keyup(function(){
-                var senha = $('#senha').val();
-                var forca = 0;
-                var barra = document.querySelector ('#barra-de-progresso')
-                var regNumerico = new RegExp (/[0-9]/i);
-                var regCaractere = new RegExp (/[a-z]/i);
-                var regEspecial = new RegExp (/[^a-z0-9]/i);
-                
-                if (senha.length > 4) {
-                    forca += 25;
-                }
-                
-                if (regNumerico.test(senha)) {
-                    forca += 25
-                }
-                
-                if (regCaractere.test(senha)) {
-                    forca += 25
-                }        
-                
-                if (regEspecial.test(senha)) {
-                    forca += 25
-                }
-                
-                var aceito = "Não";
-                
-                if (forca >= 75) {
-                    aceito = "Sim"
-                }    
-                if (forca == 100) {
-                    aceito = "Excelente";
-                } 
-                
-                $('#forca').html (`Força: ${forca}% de força - Aceito: ${aceito}`);
-            });
-        });
-        
-    </script>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body> 

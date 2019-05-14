@@ -1,23 +1,24 @@
-body {
+* {
     box-sizing: border-box;
+}
+
+body {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 #senha {
-    width: 30vw;
+    width: 32vw;
 }
 
 #barra-de-progresso {
     background-color: rgba(168, 168, 168, 0.514);
-    width: 31vw;
+    width: 32vw;
     height: 3vh;
     margin: 3vh auto;
 }
 
 #progresso {
-    background-color: red;
-    width: 5vw;
     height: 3vh;
 }
 
