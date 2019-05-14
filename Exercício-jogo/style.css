@@ -1,0 +1,16 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #add8e6;
+}
+
+.campo-digitacao {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
