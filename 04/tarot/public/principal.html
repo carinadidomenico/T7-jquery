@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f6f2e6;
+            text-align: center;
+        }
+        
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80vw;
+            margin: auto;
+        }
+        
+        .texto {
+            width: 50vw;
+        }
+        
+        .imagem {
+            height: 70%;
+        }
+        
+        button, a {
+            background-color: #f8d66e;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            border: none;
+            box-shadow: 4px 2px 5px gray;
+            margin: 16px;
+        }
+        
+        button:hover, a:hover {
+            background-color: #f8d66ede;
+            box-shadow: none;
+        }
+
+        .saiba-mais {
+            text-decoration: none;
+            color: black;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+    <title>jQuery - Reprograma</title>
+</head>
+<body>
+    <p class="mensagem"></p>
+    <div class="content">   
+        <img class="imagem" src="https://via.placeholder.com/270x500" />
+        <div class="texto">
+            <h2 class="titulo"></h2>
+            <h3 class="tipo">Arcano maior</h3>
+            <p class="descricao"></p>
+            <a href="https://www.astrolink.com.br/" target="_blank" class="saiba-mais">Saiba mais</a>
+            <button class="novaCarta">Tirar outra carta</button>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
